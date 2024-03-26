@@ -39,7 +39,9 @@ class AFD:
                 print("Transição inválida. Por favor, tente novamente.")
                 continue
             self.transitions[(start_state, symbol)] = next_state
-
+        
+        # Aqui o usuário digita o estado inicial e os estados de aceitação. Ele valida as entradas do usuário e pede para que ele tente novamente
+        # se necessário.
         print("Digite o estado inicial:")
         self.initial_state = input()
         if self.initial_state not in self.states:
@@ -49,6 +51,8 @@ class AFD:
 
         print("Digite os estados de aceitação separados por espaços:")
         self.accept_states = input().split()
+        # Verifica se todos os estados em self.accept_states também estão presentes em self.states
+        # retornando False se algum estado em self.accept_states não for encontrado em self.states.
         if not all(state in self.states for state in self.accept_states):
             print("Estado(s) de aceitação inválido(s). Por favor, tente novamente.")
             self.get_user_input()
