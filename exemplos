@@ -1,0 +1,115 @@
+'''
+Número par de 'a' e 'b':
+
+Digite os estados separados por espaços:
+q0 q1 q2 q3
+Digite o alfabeto separado por espaços:
+a b 
+Digite as transições na sequência de: estadual atual, símbolo e estado de destino. Separados por espaço, não vírgula.
+Para finalizar, pressione Enter sem digitar nada.
+q0 a q1
+q1 a q0
+q0 b q2
+q2 b q0
+q2 a q3
+q3 a q2
+q1 b q3 
+q3 b q1
+
+Digite o estado inicial:
+q0
+Digite os estados de aceitação separados por espaços:
+q0
+Digite uma string para testar (ou 'sair' para encerrar): aabb
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): aaabb
+Rejeitado
+Digite uma string para testar (ou 'sair' para encerrar): ab
+Rejeitado
+Digite uma string para testar (ou 'sair' para encerrar): abab
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): aaabbb
+Rejeitado
+Digite uma string para testar (ou 'sair' para encerrar): baab
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): sair'''
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+'''
+Contém 'aa' ou 'bb':
+
+Digite os estados separados por espaços:
+q0 q1 q2 q3
+Digite o alfabeto separado por espaços:
+a b
+Digite as transições na sequência de: estadual atual, símbolo e estado de destino. Separados por espaço, não vírgula.
+Para finalizar, pressione Enter sem digitar nada.
+q0 a q1
+q1 a q3
+q0 b q2
+q2 b q3
+q1 b q2
+q2 a q1
+q3 a q3
+q3 b q3
+
+Digite o estado inicial:
+q0
+Digite os estados de aceitação separados por espaços:
+q3
+Digite uma string para testar (ou 'sair' para encerrar): abab
+Rejeitado
+Digite uma string para testar (ou 'sair' para encerrar): abaab
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): babaab
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): aabb
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): abba
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): baab
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): bbbbb
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): aaaaa
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): sair'''
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+'''
+Começa e termina com '0' e tem pelo menos um '1':
+
+Digite os estados separados por espaços:
+q0 q1 q2 q3
+Digite o alfabeto separado por espaços:
+0 1
+Digite as transições na sequência de: estadual atual, símbolo e estado de destino. Separados por espaço, não vírgula.
+Para finalizar, pressione Enter sem digitar nada.
+q0 0 q1
+q1 0 q1
+q1 1 q2
+q2 1 q2
+q2 0 q3
+q3 1 q2
+q3 0 q3
+
+Digite o estado inicial:
+q0
+Digite os estados de aceitação separados por espaços:
+q3
+Digite uma string para testar (ou 'sair' para encerrar): 0000011110
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): 100000110
+Rejeitado
+Digite uma string para testar (ou 'sair' para encerrar): 010
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): 000
+Rejeitado
+Digite uma string para testar (ou 'sair' para encerrar): 1000
+Rejeitado
+Digite uma string para testar (ou 'sair' para encerrar): 0001000100
+Aceito
+Digite uma string para testar (ou 'sair' para encerrar): sair'''
+
