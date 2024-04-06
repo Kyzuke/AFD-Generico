@@ -1,4 +1,4 @@
-# AFD-Generico
+# AFD-Genérico
 Trabalho prático da disciplina de Teoria da Computação. Implementação Genérica de um Autômato Finito Determinístico (AFD)
 
 Autor: Gabriel Silva Duarte
